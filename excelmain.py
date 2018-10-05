@@ -30,14 +30,14 @@ for i in range(36):   #there are 36 entries
     pyautogui.keyDown('left')
     pyautogui.keyUp('left')
     pyautogui.keyDown('left')
-    time.sleep(5)
+    time.sleep(7)
     pyautogui.keyUp('left')
     pyautogui.keyUp('shiftleft')              #finish selecting stuff
     pyautogui.keyDown('ctrl')                #copy it
     pyautogui.keyDown('c')
     pyautogui.keyUp('c')
     pyautogui.keyUp('ctrl')
-    time.sleep(0.1)
+    time.sleep(1.1)
     pyautogui.typewrite('\n')                 #go to next row in same column
     trng = pyperclip.paste()                  #get copied string
     pyautogui.moveTo(meX, meY, 0.2)           #go to main excel icon
@@ -46,6 +46,6 @@ for i in range(36):   #there are 36 entries
     pyautogui.click()                         #click
     pyautogui.typewrite(trng)                 #write copied stuff
     pyautogui.typewrite('\n')                 #go to next row
-    time.sleep(0.1)
+    time.sleep(2.1)
     trng='k'
     
